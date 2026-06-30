@@ -8,7 +8,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    //chosen { zmk,matrix-transform = &imprint_letters_only; };
+    chosen { /delete-property/ zmk,matrix-transform;
+    zmk,physical_layout = &imprint_letters_only_layout;
+    };
 
     keymap {
         compatible = "zmk,keymap";
