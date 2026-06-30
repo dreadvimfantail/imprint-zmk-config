@@ -1,13 +1,14 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors.dtsi>
+#include <imprint_physical_layout.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    chosen { zmk,matrix-transform = &imprint_letters_only; };
+    //chosen { zmk,matrix-transform = &imprint_letters_only; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -60,7 +61,7 @@
             bindings = <
 &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9            &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
 &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp N1            &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7
-&to 2 &kp N9  &kp N0  &kp N1  &kp N2  &kp N3            &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &to 2
+&to 0 &kp N9  &kp N0  &kp N1  &kp N2  &kp N3            &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &to 0
                             &kp N2  &kp N3                                                                    &kp N7  &kp N8
                                 &kp N1  &kp N2  &kp N3    &kp N4  &kp N5  &kp N6
                                 &kp N7  &kp N8  &kp N9    &kp N0  &kp N1  &kp N2
